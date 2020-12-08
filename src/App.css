@@ -1,11 +1,53 @@
-.App {
-  text-align: center;
+:root {
+  --primary: #0c3a52;
+  --secondary: #00A6FB;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.game-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 }
+
+.grid {
+  border: 4px solid var(--primary);
+  border: outset;
+  border-radius: 1px;
+}
+
+.grid-item {
+  border-radius: 3px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  justify-content: space-around;
+}
+
+button:hover {
+  background-color: var(--secondary);
+  color: black;
+}
+
+button {
+  color: white;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary);
+  width: 75px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
