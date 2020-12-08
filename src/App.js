@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useRef } from 'react'
 import produce from 'immer'
 import './App.css';
+import Header from './Header/Header'
 
 const numRows = 25
 const numCols = 50
@@ -66,6 +67,7 @@ function App() {
 
   return (
     <section className='game-box'>
+      <Header />
       <div className="btn-container">
 
         <button

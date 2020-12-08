@@ -3,6 +3,10 @@
   --secondary: #00A6FB;
 }
 
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
+
 .game-box {
   text-align: center;
   display: flex;
@@ -27,6 +31,7 @@
   flex-direction: row;
   width: 300px;
   justify-content: space-around;
+  margin-bottom: 10px;
 }
 
 button:hover {
@@ -41,13 +46,12 @@ button {
   border: none;
   border-radius: 5px;
   background-color: var(--primary);
-  width: 75px;
+  width: 85px;
   margin-bottom: 5px;
   margin-top: 5px;
   font-size: 18px;
+  font-family: 'JetBrains Mono', monospace;
 }
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
